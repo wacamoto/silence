@@ -1,0 +1,25 @@
+/*
+ *  default setting
+ */
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus 
+{
+    outline: none;
+}
+
+ul, ol, li {
+    list-style-type: none;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+a:visited {
+    color: $black;
+}

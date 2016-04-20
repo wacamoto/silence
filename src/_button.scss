@@ -1,0 +1,55 @@
+/*
+ *  button style
+ */
+
+.btn {
+    height: 30px;
+    padding: 5px 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+    margin: 3px;
+    font-size: 1em;
+}
+
+@mixin btn($name, $color) {
+    .btn-#{$name} {
+        @extend .btn;
+
+        transition-duration: .15s;
+        color: nth($color, 2);
+        background-color: $white;
+        border-color: nth($color, 2);
+
+        &:hover {
+            color: $white;
+            background-color: nth($color, 2);
+            border-color: nth($color, 2);
+        }
+
+        &:active {
+            color: nth($color, 2);
+            background-color: $white;
+            border-color: nth($color, 2); 
+        }
+    }
+
+    .btn-#{$name}-reverse {
+        @extend .btn;
+
+        transition-duration: .15s;
+        color: $white;
+        background-color: nth($color, 2);
+        border-color: nth($color, 2);
+
+        &:active {
+            color: nth($color, 2);
+            background-color: $white;
+            border-color: nth($color, 2);
+        }
+    }
+}
+
+@each $color in $colors {
+    @include btn(nth($color, 1), $color);    
+}

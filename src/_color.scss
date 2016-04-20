@@ -1,0 +1,26 @@
+/*
+*   colors
+*/
+
+$white: #ffffff;
+$black: #000000;
+$iron:  #282828;
+$grey:  #8B8989;
+
+// $color: name, normal, fade, deep;
+
+$red: red,          #FF2222, #FF8484, #E90000;
+$orange: orange,    #FF8622, #FFBC84, #E96A00;
+$amber: amber,      #FFB522, #FFC550, #E99B00;
+$gold: gold,        #FFD922, #FFEA84, #E9C100;
+$yellow: yellow,    #FFFF22, #FFFF84, #E9E900;
+$lime: lime,        #B0F821, #D3FB82, #91D900;
+$green: green,      #1FEB1F, #7EF37E, #00BA00;
+$cyan: cyan,        #1DD6D6, #78E7E7, #008C8C;
+$blue: blue,        #3266DD, #86A5EB, #09359C;
+$mauve: mauve,      #5D34DF, #A088EC, #2E0AA0;
+$perple: perple,    #9D28DD, #C580EB, #66059C;
+$pink: pink,        #EB1F92, #F37EC0, #BB006A;
+
+$colors: ($red, $orange, $amber, $gold, $yellow, $lime, 
+          $green, $cyan, $blue, $mauve, $perple, $pink);

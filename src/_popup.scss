@@ -1,0 +1,21 @@
+/*
+ *  popup 
+ */
+
+.popup {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    .content {
+        padding: 20px;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+}

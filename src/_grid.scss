@@ -1,0 +1,47 @@
+/*
+ *  grid system
+ */
+
+// xs: mobile
+$sm: 480px;
+// sm: tablet
+$md: 640px;
+// md: desktop
+$lg: 840px;
+// lg: large desktop
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+@mixin response($size: null) {
+    @for $i from 1 through 12 {
+        .col#{$size}-#{$i} {
+            display: inline-flex;
+            width: calc(100% * #{$i} / 12 - 10px);
+            box-sizing: border-box;
+            margin: 5px;
+        }
+    }
+}
+
+@include response();
+
+@media (max-width: $sm) {
+    @include response(-xs);
+}
+
+@media (min-width: $sm) and (max-width: $md) {
+    @include response(-sm);
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+    @include response(-md);
+}
+
+@media (min-width: $lg) {
+    @include response(-lg);
+}
